@@ -17,7 +17,12 @@ describe('User Data Handler Unit Tests', () => {
         expect(function () { userDataHandlerEmpty.getUserEmailsList() }).to.throw(Error, 'No users loaded!')
     })
 
-    it('Should get the users email', async () => {
+    it('Should get the users email - mocking response', async () => {
+        const result = await userDataHandler.getUserEmailsList();
+        expect(result.length).to.be.above(0);
+    })
+
+    it('Should get the users email - mocking response', async () => {
         // Mocking response
         const stub = sinon.stub(userDataHandler, 'getUserEmailsList').resolves(fakeData);
         const result = await userDataHandler.getUserEmailsList();
