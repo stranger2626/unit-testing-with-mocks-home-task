@@ -1,0 +1,11 @@
+{
+    "include": ["src/data_handlers/user_data_handler.js"],
+    "check-coverage": true,
+    "watermarks": {
+        "lines": [80, 95],
+        "functions": [80, 95],
+        "branches": [80, 95],
+        "statements": [80, 95]
+      }
+    
+}
