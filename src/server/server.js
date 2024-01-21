@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const express = require('express')
 const app = express()
+app.disable('x-powered-by')
 const port = process.env.SERVER_PORT || 3000
 
 const pathToUsersJson = path.join(__dirname, '..', '..', 'data', 'users.json')
