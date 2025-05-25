@@ -1,0 +1,15 @@
+{
+  "include": [
+    "src/data_handlers/user_data_handler.js"
+  ],
+  "reporter": [
+    "text",
+    "html"
+  ],
+  "all": true,
+  "check-coverage": true,
+  "statements": 100,
+  "branches": 100,
+  "functions": 100,
+  "lines": 100
+}
